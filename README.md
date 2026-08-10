@@ -1,0 +1,58 @@
+# mParticle Apptentive Kit (Apptentive SDK 7.x)
+
+This is the [Apptentive](https://www.apptentive.com) integration for the [mParticle Apple SDK](https://github.com/mParticle/mparticle-apple-sdk), built against the [Apptentive SDK 7.x](https://github.com/apptentive/apptentive-kit-ios).
+
+## Installation
+
+### Swift Package Manager
+
+Add the Apptentive kit package dependency in Xcode or in your `Package.swift`.
+Swift Package Manager resolves the `mParticle` SDK automatically as a transitive dependency, so you do not need a separate `.package` entry for `mparticle-apple-sdk`.
+
+```swift
+let mParticleVersion: Version = "9.0.0"
+
+.package(
+    url: "https://github.com/mparticle-integrations/mparticle-apple-integration-apptentive-7",
+    .upToNextMajor(from: mParticleVersion)
+),
+```
+
+Then add `mParticle-Apptentive` as a dependency of your target.
+
+### CocoaPods
+
+Add the kit dependency to your app's Podfile:
+
+```ruby
+pod 'mParticle-Apptentive-7', '~> 9.0'
+```
+
+## Verifying the Integration
+
+After installing, rebuild and launch your app. With the mParticle log level set to Debug or higher, you should see the following in your Xcode console:
+
+```bash
+Included kits: { Apptentive }
+```
+
+## Platform Support
+
+| Platform | Minimum Version |
+| -------- | --------------- |
+| iOS      | 15.0            |
+
+## Documentation
+
+- [mParticle Apptentive Integration Guide](https://docs.mparticle.com/integrations/apptentive/event/)
+- [mParticle iOS SDK Documentation](https://docs.mparticle.com/developers/sdk/ios/)
+- [Apptentive iOS SDK Documentation](https://github.com/apptentive/apptentive-kit-ios)
+- [Apptentive iOS SDK 7 Migration Guide](https://help.alchemer.com/help/new-ios-sdk-6-native-alchemer-mobile-ios-sdk-migration-guide)
+
+## Issues
+
+Please report bugs and feature requests to the [mparticle-apple-sdk](https://github.com/mParticle/mparticle-apple-sdk/issues) repository. This mirror repository is not actively monitored for issues.
+
+## License
+
+[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
